@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- FONT-AWESOME -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- MAIN CSS -->
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- HEADER DESIGN -->
+ <header class="header">
+     <a href="#" class="logo">Portfolio</a>
+
+     <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+     <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#service">Skill</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+     </nav>
+ </header>
+
+     <!-- HOME SECTION DESIGN -->
+    <section class="home" id="home">
+        <div class="home-content">
+
+            <h3>Hi, Myself</h3>
+            <h1>Mark Junior</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3> 
+            <p>I'm a robotics enthusiast studying Software Engineering, with a background in Physical Science. I’m passionate about exploring robotics, automation, and innovative technologies to address unique real-world challenges.</p>
+
+            <div class="social-media">
+                <a href="#" class="active"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank" onclick="followLinkedIn()"><i class="fa-brands fa-linkedin"></i></a>
+                <script>
+                    function followLinkedIn() {
+                        window.open('https://www.linkedin.com/', '_blank');
+                    }
+                </script>
+            </div>
+            
+
+            <div>
+                <a href="#" class="btn" onclick="loginAndDownload()">Download CV</a>
+            </div>
+
+            <script>
+                function loginAndDownload() {
+                    var email = prompt("Please enter your email:");
+                    if (email) {
+                        // Here you can add your email validation logic
+                        alert("Thank you! You can now download the CV.");
+                        window.location.href = 'https://www.bing.com/aclick?ld=e8q6SeROs84YmSDj-P7FJalzVUCUwQWxToL1-FiiFB3kORpBOhtWV9se3mvqothR-gY0FD8VLfKsyZy67t-E0ndcqt4B0r2ZBTTeBAzkUVVv_nS6F9SaCxIdZQIkQgvf_onYLiT2ZluX8cDtiskX7bF_e5sDv3Df5IDal6K2zt-YeymZBolLTQpBYvnz1dqX0Nva4MYw&u=aHR0cHMlM2ElMmYlMmZ3d3cuam9ic2Vla2VyLmNvbSUyZmVuJTJmY3YlM2Z0aXRsZSUzZENyZWF0ZSUyYmElMmJwcm9mZXNzaW9uYWwlMmJDViUyYmluJTJiMyUyYnN0ZXBzJTI2bXNjbGtpZCUzZDIxZDMzM2NhYzg3MDE3NjRiOTFhNTQ2YjYyNWI4OWU0JTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkMDIlMjUyMCUyNTdDJTI1MjBFTi1MJTI1MjAlMjU3QyUyNTIwQ1YlMjZ1dG1fdGVybSUzZGN2JTI2dXRtX2NvbnRlbnQlM2Rjdg&rlid=21d333cac8701764b91a546b625b89e4&ntb=1'; // Replace with the actual path to your CV file
+                        
+                        // Send email to your email address
+                        var mailtoLink = 'mailto:ahamedfazarathfm@gmail.com?subject=CV Download Request&body=Email: ' + email;
+                        window.location.href = mailtoLink;
+                    } else {
+                        alert("Email is required to download the CV.");
+                    }
+                }
+            </script>
+
+        </div>
+
+        <div class="home-img">
+            <img src="img/Untitled design (3).png" alt="">
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION DESIGN -->
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="img/off-terrain-adventure-robot-nevon-sm.jpg" alt="" >
+        </div>
+    
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Software Engineer | Passionate about Space and Technology</h3>
+            <p style="line-height: 2rem;">Hi, I’m Fazarath Ahamed, a passionate <b>Software Engineering Student</b> from Sri Lanka with a knack for solving problems through innovative technology. I specialize in <b>web development</b>, <B>AI projects, and IoT solutions</B>. My mission is to create tools and systems that not only enhance user experiences but also make a meaningful impact.  
+                
+                From building chatbots that classify students study doubts to <b style="color: aqua;">Designing rescue oppression smart cars</b>, I love working on projects that challenge my creativity and technical skills. I’m also an explorer at heart, always seeking inspiration from <b>nature and wildlife photography</b>.  
+                
+                Whether it’s crafting a <b>clean, responsive website</b> or tackling <b>real-world problems with AI</b>, I’m committed to delivering excellence.  
+                
+                </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    
+    </section>
+
+    <!-- SERVICE SECTION DESIGN -->
+     <section class="service" id="service">
+        <h2 class="heading">My <span>Service</span></h2>
+
+        <div class="service-container">
+        <div class="service-box">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web development</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nostrum dolorum suscipit voluptatem eligendi doloremque eos harum sed, enim aspernatur hic quasi alias iure! Qui.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="service-box">
+            <i class="fa-solid fa-palette"></i>
+            <h3>UI/UX Designign</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nostrum dolorum suscipit voluptatem eligendi doloremque eos harum sed, enim aspernatur hic quasi alias iure! Qui.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="service-box">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>inventory</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nostrum dolorum suscipit voluptatem eligendi doloremque eos harum sed, enim aspernatur hic quasi alias iure! Qui.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        </div>
+     </section>
+
+
+     <!-- SERVICE SECTION DESIGN -->
+      <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="Untitled design (4).png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Task Management App</h4>
+                    <p>A simple app for users to create, update, and track tasks. You can add features like notifications, task categorization, and a user authentication system to display your knowledge of both front-end and back-end work</p>
+                    <i class="fa-regular fa-share-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/Untitled design (5).png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Restaurant/Reservation System</h4>
+                    <p> Efficient restaurant reservation system with real-time availability, user-friendly interface, and secure booking management.</p>
+                    <i class="fa-regular fa-share-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/ecom.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>E-commerce Store</h4>
+                    <p>Create an online store with a shopping cart, product pages, user accounts, and payment integration. This project can highlight your experience with e-commerce frameworks and APIs.</p>
+                    <i class="fa-regular fa-share-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/hospital.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Hospital Management Suite</h4>
+                    <p>Comorehensive Software system for hospital,streamlining patient data,appointments inventory and billing with enhanced security.</p>
+                    <i class="fa-regular fa-share-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/540807_7331654_758474_d9366227_image.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>A user-friendly, responsive, and visually appealing website with intuitive navigation and optimized functionality.</p>
+                    <i class="fa-regular fa-share-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/ui.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Smart expense tracker</h4>
+                    <p>A Web app to manage daily expenses with detailed analytics and budget monitoring.</p>
+                    <i class="fa-regular fa-share-from-square"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION DESIGN -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+    
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+    
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+    
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- FOOTER DESIGN -->
+     <footer class="footer">
+        <div class="footer-text">
+            <P>Copyrigt &copy; 2025 by @FAzarath Ahamed | All Rights Reserved. </P>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+     </footer>
+
+     <!-- SCROLL REVEAL JS -->
+     <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+
+    <!-- TYPED JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Other sections... -->
+
+    <!-- Include Typed.js Library -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        // Initialize Typed.js
+    </script>
+
+     <!-- MAIN JS -->
+     <script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
